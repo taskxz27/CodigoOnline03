@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=nav, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            /* que el tamaño de ancho y alto que indiquemos sea tal cual */
+            box-sizing: border-box;
+            border: 1px solid gray;
+        }
+
+        /* flexbox */
+        .menu {
+            width: 100%;
+            height: 500px;
+            background-color: lightblue;
+            display: flex;
+            /*me indica la direccion de mis elementos*/
+            flex-direction: row;
+            /*justify-content me permite alienar e forma horizontal*/
+            justify-content: space-between;
+            /* space-arund
+                space-evenly
+                    space-between
+                    center*/
+            /* align-items me permite alienar de forma vertical*/
+            align-items: center;
+
+           
+            /* indicar si el tamaño que indique a mis elementos hijos se va a mantener si reduzco al padre*/
+            /* wrap - se mantiene el tamaño
+                no wrap - se achica*/
+            flex-wrap: wrap;
+        }
+
+        .link {
+            background: lightsalmon;
+            height: 75px;
+            width: 100px;
+            padding: 10px;
+        }
+
+        .link3{
+            flex-grow: 3;
+        }
+
+        .link6 {
+            flex-shrink: 2;
+            align-self: stretch;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <div class="link">link1</div>
+        <div class="link">link2</div>
+        <div class="link link3">link3</div>
+        <div class="link">link4</div>
+        <div class="link">link5</div>
+        <div class="link link6">link6</div>
+    </nav>
+
+</body>
+
+</html>
