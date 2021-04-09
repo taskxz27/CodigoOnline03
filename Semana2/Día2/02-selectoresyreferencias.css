@@ -1,0 +1,105 @@
+/* etiqqueta, .clase, #id */
+article, h1{
+    background-color:steelblue;
+  }
+  
+  /* todos los hijos (article) que tengan los section A CUALQUIER NIVEL*/
+  section article{
+    color:lightgray;
+  }
+  
+  /* al indicar > solamente utilizo los primeros hijos LI dentro de OL*/
+  ol > li{
+    font-family:Arial;
+    color:red;
+  }
+  
+  /* clases, id, etiquetas */
+  ol > ul > li{
+    font-family: Verdana;
+    color:orange;
+  }
+  
+  .seccion1 > h2{
+    color:teal;
+  }
+  
+  #caja > span{
+    background-color:yellow;
+  }
+  
+  h2{
+    /* !important solamente utilizenlo en caso de mucha necesidad */
+    color:tomato !important;
+  }
+  
+  h2.adicional{
+    background-color:skyblue;
+  }
+  
+  .adicional{
+    font-family:Impact;
+  }
+  
+  p[name="instrucciones"]{
+    font-style:italic;
+    color:green;
+  }
+  
+  input[placeholder]{
+    background-color:yellowgreen;
+  }
+  
+  input:placeholder-shown{
+    color:blue;
+  }
+  
+  /* PSEUDOCLASSES */
+  /* elemento:nth-child(posicion,odd, even) */
+  p:nth-child(3){
+    font-style:italic;
+    font-weight:bold;
+    color:peru;
+  }
+  
+  p:last-child{
+    border:2px solid orangered;
+  }
+  
+  /* impar */
+  tr:nth-child(odd){
+    background-color:salmon;
+  }
+  
+  /* pares */
+  tr:nth-child(even){
+    background-color: skyblue;;
+  }
+  
+  /* clase para tablas */
+  table, th, td{
+    border:1px solid black;
+    /* remover espacios entre celdas */
+    border-collapse: collapse;
+    /* centrar horizontal */
+    margin:0 auto;
+  }
+  
+  tr:nth-child(3), tr:nth-child(4){
+    background-color:palegreen;
+  }
+  
+  /* PseudoElementos */
+  
+  #principal::first-letter{
+    color:black;
+    font-size:40px;
+    font-weight:bold;
+  }
+  
+  li::before{
+    color:purple;
+    content: "-";
+  }
+  
+  
